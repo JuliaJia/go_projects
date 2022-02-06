@@ -1,12 +1,18 @@
 package main
 
-import (
-	"fmt"
-	"go_learn/string_func"
-)
+import "go_learn/magedu"
 
 func main() {
-	s := []byte{'a', 'b', 'c'}
-	str := string_func.GetStringBySlice(s)
-	fmt.Println(str)
+	//magedu.Vars1()
+	//magedu.Vars2()
+	//magedu.Vars3()
+	//magedu.Const1()
+	//fmt.Println(magedu.PackageMsg)
+	//magedu.Print1()
+	//magedu.Bool1()
+	//magedu.Bool2()
+	//magedu.Int1()
+	//magedu.Byte1()
+	//magedu.Float1()
+	magedu.String1()
 }
