@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/JuliaJia/goLearn"
-)
+import "github.com/JuliaJia/goLearn/goLearn"
 
 func main() {
 	//magedu.Vars1()
@@ -33,5 +31,5 @@ func main() {
 	//magedu.Func4()
 	//magedu.Todolist()
 	//magedu.Defer1()
-	goLearn.Defer1()
+	goLearn.Func1()
 }
