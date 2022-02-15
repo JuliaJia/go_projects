@@ -1,6 +1,6 @@
 package main
 
-import "github.com/JuliaJia/go_projects/goLearn/magedu"
+import "github.com/JuliaJia/go_projects/tree/main/go_learn/magedu"
 
 func main() {
 	//magedu.Vars1()
