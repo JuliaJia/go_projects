@@ -1,6 +1,8 @@
 package main
 
-import "github.com/JuliaJia/go_projects/tree/main/go_learn/magedu"
+import (
+	goLearn "github.com/JuliaJia/goLearn/magedu"
+)
 
 func main() {
 	//magedu.Vars1()
@@ -31,5 +33,5 @@ func main() {
 	//magedu.Func4()
 	//magedu.Todolist()
 	//magedu.Defer1()
-	magedu.Panic2()
+	goLearn.Defer1()
 }

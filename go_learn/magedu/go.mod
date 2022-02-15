@@ -1,3 +1,3 @@
-module github.com/JuliaJia/go_projects/tree/main/go_learn/magedu
+module github.com/JuliaJia/goLearn
 
 go 1.17
