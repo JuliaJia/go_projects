@@ -1,7 +1,7 @@
 package main
 
 import (
-	goLearn "github.com/JuliaJia/goLearn/magedu"
+	"github.com/JuliaJia/goLearn"
 )
 
 func main() {
