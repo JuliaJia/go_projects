@@ -1,12 +1,6 @@
 package main
 
-<<<<<<< HEAD
-import (
-	"github.com/JuliaJia/goLearn"
-)
-=======
 import "github.com/JuliaJia/go_projects/goLearn/magedu"
->>>>>>> learn
 
 func main() {
 	//magedu.Vars1()
@@ -38,5 +32,5 @@ func main() {
 	//magedu.Todolist()
 	//magedu.Defer1()
 	//magedu.Panic2()
-	goLearn.Panic2()
+	magedu.Panic2()
 }
