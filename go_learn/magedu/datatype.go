@@ -78,3 +78,106 @@ func String1() {
 	fmt.Printf("%T,%#v,%f\n", vv, vv, vv)
 
 }
+
+func Pointer1() {
+	var (
+		pointerInt    *int
+		pointerString *string
+	)
+
+	fmt.Printf("%T,%#v\n", pointerInt, pointerInt)
+	fmt.Printf("%T,%#v\n", pointerString, pointerString)
+	age := 32
+	age2 := age
+	fmt.Printf("%T,%#v\n", &age, &age)
+	fmt.Printf("%T,%#v\n", &age2, &age2)
+	pointerInt = &age
+	fmt.Println(*pointerInt)
+	*pointerInt = 33000
+	fmt.Println(age2, age)
+	pointerString = new(string)
+	*pointerString = "123"
+	pp := &pointerString
+	fmt.Println(**pp, *pointerString)
+	**pp = "321"
+	fmt.Println(*pointerString)
+}
+func Scan1() {
+	name := ""
+	age := 0
+	msg := ""
+	fmt.Println("请输入你的名字：")
+	fmt.Scan(&name)
+	fmt.Println("你的名字是：", name)
+	fmt.Println("请输入你的年龄：")
+	fmt.Scan(&age)
+	fmt.Println("你的年龄是：", age)
+	fmt.Println("请输入你的信息：")
+	fmt.Scan(&msg)
+	fmt.Println("你的信息是：", msg)
+}
+func If1() {
+	fmt.Println("去给本女王买十个包子！看到卖西瓜的就买一个！")
+	var y string
+	fmt.Println("有没有卖西瓜的：")
+	fmt.Scan(&y)
+	if y == "yes" {
+		fmt.Println("老板，来一个西瓜，又大又甜的那种！")
+		fmt.Println("十个包子一个大又甜西瓜给wuli宝贝小公主买回来啦！")
+	} else if y == "no" {
+		fmt.Println("十个包子给wuli宝贝小公主买回来啦！")
+	} else {
+		fmt.Println("输入错误！")
+	}
+}
+
+func For1() {
+	var sum = 0
+	for index := 1; index <= 100; index++ {
+		sum += index
+	}
+	fmt.Println(sum)
+}
+
+func For2() {
+	var sum = 0
+	var index = 1
+	for index <= 1000 {
+
+		if index == 101 {
+			break
+		}
+		sum += index
+		index++
+	}
+	fmt.Println(sum)
+}
+func For3() {
+	var str = "我爱毛主席"
+	for _, v := range str {
+		fmt.Println(string(v))
+	}
+	for _, v := range str {
+		fmt.Printf("%q\n", v)
+	}
+}
+func Goto1() {
+	fmt.Println("start")
+	goto End
+	fmt.Println("1")
+End:
+	fmt.Println("End")
+}
+func Goto2() {
+	fmt.Println("Start")
+	var index = 1
+CC:
+	fmt.Println(index)
+	index++
+	if index > 100 {
+		goto End
+	}
+	goto CC
+End:
+	fmt.Println("End")
+}
