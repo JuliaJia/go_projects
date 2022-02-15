@@ -1,3 +1,3 @@
-module github.com/JuliaJia/goLearn
+module go_learn
 
 go 1.17
