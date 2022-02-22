@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/JuliaJia/gotest/test01"
 	"github.com/JuliaJia/mytools/learntools"
 )
 
@@ -33,5 +34,9 @@ func main() {
 	//magedu.Func4()
 	//magedu.Todolist()
 	//magedu.Defer1()
-	learntools.PrintNow()
+	//learntools.PrintNow()
+	//test01.Test1()
+	learntools.Args1()
+	test01.Test1()
+	test01.Test2()
 }
