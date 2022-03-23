@@ -1,4 +1,4 @@
-github.com/JuliaJia/gotest v1.0.5 h1:t5UvEVccXUzcS3p6CRxfDiPrl6PX8X9vm0jjqz0ULDM=
-github.com/JuliaJia/gotest v1.0.5/go.mod h1:iuUaEmlauSQ5P9biJqJQQCFu0QZXsXAvV4S87bqsv+w=
+github.com/JuliaJia/gotest v1.0.15-0.20220308114157-edadd3d8fb7c h1:rHOl2CtNCwQGXTAnOL0/1ODKZlnmYK0OhnIXSx8mHhw=
+github.com/JuliaJia/gotest v1.0.15-0.20220308114157-edadd3d8fb7c/go.mod h1:iuUaEmlauSQ5P9biJqJQQCFu0QZXsXAvV4S87bqsv+w=
 github.com/JuliaJia/mytools v1.0.5 h1:wGzpHpq4bRXCcQw1z7n6rUwjiPLNgUw8bWqM64hwY5k=
 github.com/JuliaJia/mytools v1.0.5/go.mod h1:onszQ3WsTQ5nM1c1c6GoTFccapr0XcVvYKHRcQ65jMw=
