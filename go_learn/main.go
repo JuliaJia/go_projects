@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go_learn/magedu"
+	"sync"
 )
 
 func Add(a float64, b float64) float64 {
@@ -125,5 +126,35 @@ func main() {
 	//magedu.Chan1(30)
 	//magedu.Chan2()
 	//fmt.Println(magedu.FileLine("magedu/day05.go"))
-	magedu.FilePathList(".")
+	//magedu.FileLineCount(".")
+	//magedu.FileLineTotalCountChannel(".")
+	//magedu.FileLineTotalCount(".")
+	//roc, _ := magedu.ChannelType("RO", 10)
+	//_, woc := magedu.ChannelType("WO", 10)
+	//channel := make(chan int, 10)
+	//channel, _, _ = magedu.IntChannelTypeUse(channel, "WO")
+	//magedu.IntChannelTypeUse(channel, "RO")
+	//magedu.RunTime1()
+	//magedu.RunTime2()
+	worker := magedu.NewPool(5)
+	worker.AddTask(func() interface{} {
+		return 1
+	})
+	worker.AddTask(func() interface{} {
+		return 2
+	})
+	worker.AddTask(func() interface{} {
+		return 3
+	})
+	worker.Start()
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go func() {
+		for result := range worker.Results {
+			fmt.Println(result)
+		}
+		wg.Done()
+	}()
+	worker.Wait()
+	wg.Wait()
 }
