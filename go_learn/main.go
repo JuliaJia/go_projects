@@ -178,5 +178,30 @@ func main() {
 	//	magedu.Socket2(pro, host, port)
 	//}
 
-	magedu.HttpWeb11()
+	//magedu.HttpWeb11()
+
+	//magedu.Regexp3("132\\d{8}", "132????????", "我的电话是13212312312，13212312313，15812312313")
+
+	//var (
+	//	host     string
+	//	port     string
+	//	typeInfo string
+	//	pro      string
+	//)
+	//flag.StringVar(&host, "H", "127.0.0.1", "连接地址")
+	//flag.StringVar(&port, "P", "22", "连接端口")
+	//flag.StringVar(&typeInfo, "t", "Server", "服务类型")
+	//flag.StringVar(&pro, "p", "Tcp", "协议类型")
+	//flag.Usage = func() {
+	//	fmt.Println("usage: -t [Server | Client] -p [tcp | udp] [-H 127.0.0.1] [-P 22]")
+	//	flag.PrintDefaults()
+	//}
+	//flag.Parse()
+	//if typeInfo == "Server" {
+	//	magedu.RpcServer(host, port, pro)
+	//} else if typeInfo == "Client" {
+	//	magedu.RpcClient(host, port, pro)
+	//}
+
+	magedu.Template3()
 }

@@ -2,7 +2,9 @@ module go_learn
 
 go 1.17
 
+require github.com/PuerkitoBio/goquery v1.8.0
+
 require (
-	github.com/JuliaJia/gotest v1.0.15-0.20220308114157-edadd3d8fb7c
-	github.com/JuliaJia/mytools v1.0.5
+	github.com/andybalholm/cascadia v1.3.1 // indirect
+	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect
 )
