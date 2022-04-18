@@ -2,9 +2,8 @@ module go_learn
 
 go 1.17
 
-require github.com/PuerkitoBio/goquery v1.8.0
-
 require (
-	github.com/andybalholm/cascadia v1.3.1 // indirect
-	golang.org/x/net v0.0.0-20210916014120-12bc252f5db8 // indirect
+	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13
+	github.com/go-sql-driver/mysql v1.6.0
+	github.com/spaolacci/murmur3 v1.1.0
 )

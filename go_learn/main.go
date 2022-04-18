@@ -2,8 +2,20 @@ package main
 
 import (
 	"fmt"
-	"go_learn/magedu"
+	"go_learn/learn"
 )
+
+//type Addable interface {
+//type int,int8,int16,int32,int64,uint,uint8,uint16,uint32,uint64,uintptr,float32,float64,complex64,complex128,string
+//}
+//
+//func add[T Addable](a,b T) T {
+//	return a+b
+//}
+
+//func Test01(){
+//	add(1,2)
+//}
 
 func Add(a float64, b float64) float64 {
 	return a / b
@@ -203,5 +215,52 @@ func main() {
 	//	magedu.RpcClient(host, port, pro)
 	//}
 
-	magedu.Template3()
+	//magedu.Template3()
+	//dsn := "root:123456@tcp(192.168.33.10:3306)/go_learn?charset=utf8mb4&loc=PRC&parseTime=true"
+	//magedu.Sql1("mysql", dsn)
+	//var sum = func(a, b int) int {
+	//	return a + b
+	//}
+	//nv := learn.Op(sum, 3)
+	//fmt.Println(nv)
+	//f := learn.Sub()
+	//f()
+	//f()
+	//fmt.Println()
+	//learn.Inf01("123", "456")
+	//Test01()
+	//learn.Reflect12()
+	//learn.Basic3()
+	//learn.Ticker()
+	//learn.Timer()
+	//learn.Constant()
+	//rect := learn.Nan("12.435464")
+	//if math.IsNaN(rect) {
+	//	fmt.Println("解析出错！")
+	//} else {
+	//	fmt.Println(rect)
+	//}
+
+	//learn.Ceil(1.4)
+	//learn.Floor(1.4)
+	//learn.Trunc(-1.4)
+	//learn.Modf(-1.4)
+	//learn.Abs(-1.4)
+	//learn.Max(3, 4)
+	//arr := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	//fmt.Println(learn.RanShuffleInt2(arr))
+	//var str string
+	//learn.Std(str)
+	//learn.ReadFile2("go.mod")
+	//var str string
+	//learn.WriteFile2("learn.txt", str)
+	//learn.FileOpInfo2("learn")
+	//learn.TempLogCreate("test", "learn/")
+	//learn.Compress("learn/day02.go", "learn/day02.go.zlib")
+	//learn.SysCall("ls", "-a", "-l", "learn")
+	//learn.CompressReader("learn/day02.go.zlib")
+	//learn.JsonFunc()
+	//str := learn.Base64Func("1.png", 1024)
+	//learn.Base64Decode("2.png", str)
+	learn.Mutex02()
 }
