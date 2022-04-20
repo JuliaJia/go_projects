@@ -14,27 +14,3 @@ type Service interface {
 	//删除主机
 	DeleteHost(context.Context, *DeleteHostRequest) (*Host, error)
 }
-
-type Host struct{}
-
-type QueryHostRequest struct {
-	PageSize   int
-	PageNumber int
-}
-
-type Set struct {
-	Total int64
-	Items []*Host
-}
-
-type DescribeHostRequest struct {
-	Id string
-}
-
-type UpdateHostRequest struct {
-	Id string
-}
-
-type DeleteHostRequest struct {
-	Id string
-}
